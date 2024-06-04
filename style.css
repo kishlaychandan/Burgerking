@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(food.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main h1{
+    background-color: pink;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    border: 0.5rem solid gray;
+    color: red;
+    margin: 3rem 0rem;
+    font-size: 3rem;
+    animation: heading 4s linear infinite;
+
+}
+@keyframes heading {
+    0%{
+        transform: translateX(-5rem);
+        color: orangered;
+    }
+    50%{
+        transform: translateX(5rem);
+        color: green;
+    }
+    100%{
+        transform: translateX(-5rem);
+        color: blue;
+    }
+}
+.main{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 2rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.container1{
+    display: flex;
+    border-radius: 1rem;
+    width: 30rem;
+    height: 20rem;
+    font-size: 2rem;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: cadetblue;
+    /* margin-bottom: 1rem; */
+}
+button{
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border-width: 0px;
+    color: aqua;
+    border: 2px solid aqua;
+}
+button:hover{
+    cursor: pointer;
+    border: 2px solid pink;
+    background-color: rgb(229, 219, 221);
+}
+.container1{
+    padding: 1.3rem 1rem;
+}
+.container1>div>input{
+    width: 2rem;
+    height:2rem;
+    border-radius: 2rem;
+}
+.container2{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.order-card{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.order-card>img{
+    /* padding: 0.2rem; */
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+
